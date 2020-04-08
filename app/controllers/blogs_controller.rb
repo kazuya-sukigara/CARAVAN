@@ -4,6 +4,10 @@ class BlogsController < ApplicationController
 
   def show
   end
+  def index
+    # 記事を全件取得
+    @blogs = Blog.all
+  end
 
   def new
   	  @blog = Blog.new
